@@ -1,0 +1,16 @@
+{
+  "name": "ti-3d-shapes",
+  "version": "1.0.0",
+  "description": "A web component shape modeling in HTML",
+  "main": "./dist/ti-3d-shapes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./src/ti-3d-shapes.js"
+  },
+  "repository": "https://github.com/takaneichinose/ti-3d-shapes.git",
+  "author": "Takane Ichinose <ichinose.takane@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  }
+}
