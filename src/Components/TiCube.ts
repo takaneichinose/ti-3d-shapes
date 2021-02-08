@@ -54,7 +54,8 @@ export default class TiCube extends TiComponent {
 			".ti-box": {
 				"width": `${width}${unit}`,
 				"height": `${height}${unit}`,
-				"position": "relative"
+				"position": "relative",
+				"transform-style": "preserve-3d"
 			},
 			".ti-box > div": {
 				"background-color": color,
