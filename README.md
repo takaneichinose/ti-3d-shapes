@@ -38,6 +38,24 @@ Sides of the element can be set, but only the face of the shape.
 
 If the required attributes was not set, Javascript will throw an Exception stating that the specific attribute is required.
 
+## Building distribution
+
+[Yarn](https://yarnpkg.com/) is used to manage the packages and the dependencies, so it must be installed globally to start building the project.
+
+Using terimal or command prompt, run the command below to install all the dependencies.
+
+```
+yarn install
+```
+
+After installing the dependencies, run the command below to compile the Typescript code into Javascript
+
+```
+yarn build
+```
+
+After building the package, 'dist' folder will be created at the same directory, and 'ti-3d-shapes.js' Javascript file will be created at the same time. This file can be sourced at the ```<script>``` tag in HTML code.
+
 ## To Do
 
 These are the other shapes that I'm planning to make:
