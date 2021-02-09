@@ -59,17 +59,32 @@ export default class TiCube extends TiComponent {
 			},
 			".ti-box > div": {
 				"background-color": color,
-				"width": "100%",
-				"height": "100%",
 				"position": "absolute",
-				"top": "0px",
-				"left": "0px"
+				"transform-origin": "center"
+			},
+			".ti-box-top, .ti-box-bottom": {
+				"width": `${width}${unit}`,
+				"height": `${depth}${unit}`,
+				"top": `calc(50% - ${depth / 2}${unit})`,
+				"left": `calc(50% - ${width / 2}${unit})`
+			},
+			".ti-box-left, .ti-box-right": {
+				"width": `${depth}${unit}`,
+				"height": `${height}${unit}`,
+				"top": `calc(50% - ${height / 2}${unit})`,
+				"left": `calc(50% - ${depth / 2}${unit})`
+			},
+			".ti-box-front, .ti-box-rear": {
+				"width": `${width}${unit}`,
+				"height": `${height}${unit}`,
+				"top": `calc(50% - ${height / 2}${unit})`,
+				"left": `calc(50% - ${width / 2}${unit})`
 			},
 			".ti-box-top": {
 				"transform": [
 					`translateZ(calc(${depth}${unit} / 2))`,
 					"rotateX(90deg)",
-					`translateZ(calc(${depth}${unit} / 2))`
+					`translateZ(calc(${height}${unit} / 2))`
 				].join(" "),
 				"filter": "brightness(110%)",
 			},
@@ -77,7 +92,7 @@ export default class TiCube extends TiComponent {
 				"transform": [
 					`translateZ(calc(${depth}${unit} / 2))`,
 					"rotateX(-90deg)",
-					`translateZ(calc(${depth}${unit} / 2))`
+					`translateZ(calc(${height}${unit} / 2))`
 				].join(" "),
 				"filter": "brightness(80%)",
 			},
@@ -85,14 +100,14 @@ export default class TiCube extends TiComponent {
 				"transform": [
 					`translateZ(calc(${depth}${unit} / 2))`,
 					"rotateY(-90deg)",
-					`translateZ(calc(${depth}${unit} / 2))`
+					`translateZ(calc(${width}${unit} / 2))`
 				].join(" ")
 			},
 			".ti-box-right": {
 				"transform": [
 					`translateZ(calc(${depth}${unit} / 2))`,
 					"rotateY(90deg)",
-					`translateZ(calc(${depth}${unit} / 2))`
+					`translateZ(calc(${width}${unit} / 2))`
 				].join(" "),
 				"filter": "brightness(90%)",
 			},
