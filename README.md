@@ -2,11 +2,11 @@
 
 ## Overview
 
-This is a 3D shape creation tool made in HTML, CSS, Javascript ([Typescript](https://www.typescriptlang.org/)).
+This is a 3D shape creation tool made in HTML, CSS, JavaScript ([TypeScript](https://www.typescriptlang.org/)).
 
 The elements are made in Web Components, so custom elements are used to implement this modelling tool.
 
-Using [Parcel](https://parceljs.org/) application bundler, The Typescript code is being compiled to a Javascript code.
+Using [Parcel](https://parceljs.org/) application bundler, The TypeScript code is being compiled to a JavaScript code.
 
 ## Usage
 
@@ -36,7 +36,7 @@ Sides of the element can be set, but only the face of the shape.
 
 ---
 
-If the required attributes was not set, Javascript will throw an Exception stating that the specific attribute is required.
+If the required attributes was not set, JavaScript will throw an Exception stating that the specific attribute is required.
 
 ## Building distribution
 
@@ -48,19 +48,21 @@ Using terimal or command prompt, run the command below to install all the depend
 yarn install
 ```
 
-After installing the dependencies, run the command below to compile the Typescript code into Javascript
+After installing the dependencies, run the command below to compile the TypeScript code into JavaScript
 
 ```
 yarn build
 ```
 
-After building the package, 'dist' folder will be created at the same directory, and 'ti-3d-shapes.js' Javascript file will be created at the same time. This file can be sourced at the ```<script>``` tag in HTML code.
+After building the package, 'dist' folder will be created at the same directory, and 'ti-3d-shapes.js' JavaScript file will be created at the same time. This file can be sourced at the ```<script>``` tag in HTML code.
 
 ## To Do
 
 These are the other shapes that I'm planning to make:
-1. Full-Polygon (or namely sphere)
 1. Triangle
-1. Pyramid
-1. Parallelogram
+1. Sphere
+1. Cone
+1. Trapezoid
 1. Doughnut
+1. Texture
+1. Shading
